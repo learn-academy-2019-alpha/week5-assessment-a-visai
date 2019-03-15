@@ -3,7 +3,7 @@
 Try your best to answer each question on your own before looking up the answer online. Once you're done writing your first answer, you can google the question and write the best answer you find.
 
 ### 1. What are some advantages of using Ruby on Rails?
-
+Ruby on Rails can be used to create an application or website from the ground up.
 ### 2. How does Ruby on Rails use the Model View Controller (MVC) framework?
 
 ### 3. Using the information given, complete the steps for creating a new view in a rails app by filling in the blanks:
