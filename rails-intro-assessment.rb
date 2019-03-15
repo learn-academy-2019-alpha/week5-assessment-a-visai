@@ -42,7 +42,6 @@ def pluralizer(num,noun)
   p num > 1 ? "#{num} #{noun}s" : nil
 end
 
-
 # Bonus: Make it handle a few collective nouns like "sheep", "geese", "children", "people" and "species".
 
 def pluralizer(num,noun)
