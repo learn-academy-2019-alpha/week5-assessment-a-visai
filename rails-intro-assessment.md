@@ -12,23 +12,22 @@ Ruby on Rails can be used to create an application or website from the ground up
 
   code:
   ```
-  get '/about' => 'statics#about'
+  get '/hello' => 'main#about'
   ```
   file: config/routes
 
-  2. Create the ____________
+  2. Create the _____________________
 
   code:
   ```
-  class ____________ < ApplicationController
+  class MainController < ApplicationController
 
   def about
-    _______________________
+    render 'about.html.erb'
   end
   ```
 
-  file: _____________________
-
+  file: app/controllers
   3. Create the View
 
   code:
@@ -37,7 +36,7 @@ Ruby on Rails can be used to create an application or website from the ground up
   <div>This is the About page!</div>
   ```
 
-  file: _____________________
+  file: app/views/about.html.erb
 
 
 ### 4. Look at these sets of Rails routes, they are an example of which principle/term that we touched on briefly in class? Find the term, and explain why it is important.
@@ -53,19 +52,20 @@ Ruby on Rails can be used to create an application or website from the ground up
 ```
 
 ### 5. What is the public folder used for in Rails?
-
+Holding assets that the application can access without talking to a server.
 ### 6. Write a rails route for a controller called "main" and a page called "game" that takes in a parameter called "guess"
+get 'game' => 'main#guess'
 
 ### 7. What are cookies for? How do they work? What is the difference between a session and a cookie?
-
+Cookies are used for storing variables between page refreshes or redirects. The main difference is session data is stored on a server whereas cookies are stored in the users browser.
 ### 8. In an html form, what does the "action" attribute tell you about the form?  How do you designate the HTTP verb for the form?
 
 ### 9. Why would you use an instance variable in a rails controller?
-
+An instance variable can be used to pass ruby methods around in rails. <%==>
 ### 10. Name two rails generator commands and what files they create:
 
 ### 11. There is a table called "squirrels". What SQL code would we write to print everything in the table?
-
+SELECT * FROM squirrels
 ### 12. What is a foreign key? Where would you use it in a has many/belongs to relationship?
 [Your Answer]
 
